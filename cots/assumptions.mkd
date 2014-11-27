@@ -1,0 +1,13 @@
+* USB is robust enough on mobile devices for use running our system.
+* The level of software modification to enable host + charging is acceptable.
+* Cell phones can simultaneously charge and offer USB host for talking with USB devices.
+* Headset ports have enough data bandwidth to replace USB for our purposes of receiving / sending radio messages.
+* Headset ports can supply enough power to replace USB for our purposes.
+* It is desireable to have the cheapest possible system.
+* It is technologically feasible to produce a transceiver for our system using low-cost materials.
+* The microphone bias supply voltage on a headset port can supply adequate power for the analog circuitry in an optimised transceiver.
+* It is cost effective to build a power supply into the radio module.
+* It is cost effective to build a battery into the radio module.
+* It is ideal to have no user-serviceable parts (batteries) in the radio module.
+* It is possible to make a radio module small enough to be conveniently carried in a pocket, or attached to a phone otherwise in use.
+* It is possible to condense what has been implemented with a dedicated USB receiver and dedicated USB transmitter into a single highly integrated analog circuit that is cheap enough to mass produce.
