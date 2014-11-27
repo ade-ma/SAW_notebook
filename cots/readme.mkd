@@ -1,7 +1,7 @@
 Initial information about the architecture and a partial schematic credits to [czech electronics site](http://danyk.cz/reverz21.html).
 T1 is a BJT operating as a low noise amplifier, with voltage feedback biasing via the 1k, 56k, and 220o resistors. The LC tank at the base of the antenna, AC coupled to the base of the transistor, is tuned for the frequency required.
 
-T2 is a superregenerative receiver, with a self-damping resonant tank that's sampled to determine the presence or absence of a signal. The 56k and 150k resistors set the bias voltage for the oscillator - if these are changed to an incorrect value, or if the supply voltage is too low, the receiver will not function. I suspect the 1uH inductor acts to automatically squeltch the oscillations. I believe the closest well-known circuit is that of the [collpits oscillator](https://en.wikipedia.org/wiki/Colpitts_oscillator).
+T2 is a superregenerative receiver, with a self-damping resonant tank that's sampled to determine the presence or absence of a signal. The 56k and 150k resistors set the bias voltage for the oscillator - if these are changed to an incorrect value, or if the supply voltage is too low, the receiver will not function. I suspect the 1uH inductor acts to automatically quench the oscillations. I believe the closest well-known circuit is that of the [collpits oscillator](https://en.wikipedia.org/wiki/Colpitts_oscillator).
 
 The LM358's first channel is used as a basic inverting amplifier to amplify (and rectify?) the signal from the receiver.
 
