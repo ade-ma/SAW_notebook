@@ -1,0 +1,22 @@
+Initial information about the architecture and a partial schematic credits to [czech electronics site](http://danyk.cz/reverz21.html).
+T1 is a BJT operating as a low noise amplifier, with voltage feedback biasing via the 1k, 56k, and 220o resistors. The LC tank at the base of the antenna, AC coupled to the base of the transistor, is tuned for the frequency required.
+
+T2 is a superregenerative receiver, with a self-damping resonant tank that's sampled to determine the presence or absence of a signal. The 56k and 150k resistors set the bias voltage for the oscillator - if these are changed to an incorrect value, or if the supply voltage is too low, the receiver will not function. I suspect the 1uH inductor acts to automatically squeltch the oscillations. I believe the closest well-known circuit is that of the [collpits oscillator](https://en.wikipedia.org/wiki/Colpitts_oscillator).
+
+The LM358's first channel is used as a basic inverting amplifier to amplify (and rectify?) the signal from the receiver.
+
+The LM358's second channel is used as a hysteretic comparator, discretizing the signal into boolean values.
+
+The remaining components consist of RC passive filters.
+
+
+
+For low-voltage, low-current operation, the LM358 is depopulated, along with any/all supporting resistors and capacitors deemed appropriate. The output, less than 50mV, is taken across the 100k resistor in the lowpass filter. For low voltage operation, ideal resistor values should be calculated for a particular voltage using some yet-unknown equations, but emperical values have been determined for operation between 1.8 and 3.3 volts. The transmitter requires no modification for operation at lower voltages.
+
+Preliminary experimentation suggests halving 1k to ~500o and reducing 150k to 40k-80k.
+
+
+
+
+
+relevant part numbers: rx-rm-5v mx-js-05v fs1000a mx-f01
