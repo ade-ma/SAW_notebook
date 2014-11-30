@@ -1,4 +1,4 @@
-* USB is robust enough on mobile devices for use running our system.
+* The USB implementation in the kernel of the mobile devices is robust enough for running our system.
 * The level of software modification to enable host + charging is acceptable.
 * Cell phones can simultaneously charge and offer USB host for talking with USB devices.
 * Headset ports have enough data bandwidth to replace USB for our purposes of receiving / sending radio messages.
@@ -11,3 +11,9 @@
 * It is ideal to have no user-serviceable parts (batteries) in the radio module.
 * It is possible to make a radio module small enough to be conveniently carried in a pocket, or attached to a phone otherwise in use.
 * It is possible to condense what has been implemented with a dedicated USB receiver and dedicated USB transmitter into a single highly integrated analog circuit that is cheap enough to mass produce.
+* Silicons diodes have low enough of a forward drop to be viable for use as rectification.
+* Small enough antennae can be found or made such that the radio module is not prohibitively bulky.
+* A low-enough voltage radio module design exists to be powered without requiring external connectors or batteries.
+* The super-regenerative receiver with which we started is low power enough for operation off a headphone jack.
+ * false - ~900uA quiescent current for receiver @ 2v
+* The high turn step-up coil can still produce enough current to power the transmitter and receiver.
