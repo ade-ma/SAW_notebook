@@ -17,3 +17,6 @@
 * The super-regenerative receiver with which we started is low power enough for operation off a headphone jack.
  * false - ~900uA quiescent current for receiver @ 2v
 * The high turn step-up coil can still produce enough current to power the transmitter and receiver.
+* The system is cold-tolerant.
+* The system is robust enough for outdoor deployment.
+* The system is robust enough for handsfree deploy.
