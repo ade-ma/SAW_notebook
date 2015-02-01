@@ -16,7 +16,13 @@ For low-voltage, low-current operation, the LM358 is depopulated, along with any
 Preliminary experimentation suggests halving 1k to ~500o and reducing 150k to 40k-80k.
 
 
+-----
 
+
+with lm358: 4.20mA
+without lm358: 3.73mA
+
+-----
 
 
 relevant part numbers: rx-rm-5v mx-js-05v fs1000a mx-f01
